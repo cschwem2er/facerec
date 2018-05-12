@@ -1,5 +1,5 @@
 
-#' Title
+#' @title view subject
 #' @name view_subject
 #' @description
 #' Returns all face id's for each image enrolled for a given subject in a gallery.

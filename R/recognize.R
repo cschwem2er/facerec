@@ -1,5 +1,5 @@
 
-#' Title
+#' @title recognize face
 #' @name recognize
 #' @description
 #' Recognize faces in an image and return the most likely matches from a gallery.

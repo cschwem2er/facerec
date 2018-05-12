@@ -2,7 +2,7 @@
 % Please edit documentation in R/verify.R
 \name{verify}
 \alias{verify}
-\title{Title}
+\title{verify face}
 \usage{
 verify(image, subject_id, gallery)
 }

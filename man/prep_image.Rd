@@ -2,7 +2,7 @@
 % Please edit documentation in R/prep_image.R
 \name{prep_image}
 \alias{prep_image}
-\title{Title}
+\title{prepare local image}
 \usage{
 prep_image(img_file)
 }

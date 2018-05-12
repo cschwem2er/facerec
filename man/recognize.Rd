@@ -2,7 +2,7 @@
 % Please edit documentation in R/recognize.R
 \name{recognize}
 \alias{recognize}
-\title{Title}
+\title{recognize face}
 \usage{
 recognize(image, gallery, min_head_scale = 0.015, threshold = 0.6,
   max_num_results = 10, show_candidate_images = TRUE)

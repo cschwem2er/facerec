@@ -2,7 +2,7 @@
 % Please edit documentation in R/remove_gallery.R
 \name{remove_gallery}
 \alias{remove_gallery}
-\title{Title}
+\title{remove gallery}
 \usage{
 remove_gallery(gallery)
 }

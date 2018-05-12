@@ -39,7 +39,7 @@ Sys.setenv(kairos_id = "Your Kairos API id")
 Sys.setenv(kairos_key = "Your Kairos API key")
 ```
 
-```{r}
+```{r, eval = FALSE}
 library(facerec)
 facerec_init()
 ```
@@ -52,22 +52,19 @@ The Kairos API accepts image of file type JPG, PNG, or BMP. Images can be passed
 
 <img src="https://upload.wikimedia.org/wikipedia/en/2/2a/Finn-Force_Awakens_%282015%29.png" width="300">
 
-```{r}
+```{r, eval = FALSE}
 finn_image <- 'https://upload.wikimedia.org/wikipedia/en/2/2a/Finn-Force_Awakens_%282015%29.png'
 finn_face <- detect(image = finn_image)
 ```
 
-The function returns a dataframe with annotations for the recognized face in the input image. Variables include positional features of recognized faces, such as x and y coordinates for eyes. Moreover, demographic attributes like gender, ethnicity and age are available:
+The function returns a dataframe with annotations for the recognized face in the input image. Variables include positional features of recognized faces, such as x and y coordinates for eyes. Moreover, demographic attributes like gender, ethnicity and age are available.
 
-```{r}
-colnames(finn_face)
-```
+Features can be visualized with the packages [magick](https://cran.r-project.org/web/packages/magick/index.html) and [ggplot2](https://cran.r-project.org/web/packages/ggplot2/index.html):
 
-Features can be vizualied by using the packages [magick](https://cran.r-project.org/web/packages/magick/index.html) and [ggplot2](https://cran.r-project.org/web/packages/ggplot2/index.html):
-
-```{r finn, fig.height=4, fig.width=3}
+```{r finn, fig.height=4, fig.width=3, eval = FALSE}
 library(magick)
 library(ggplot2)
+library(scales)
 
  finn_image %>% image_read() %>% image_ggplot() + 
    geom_rect(data = finn_face, 
@@ -77,20 +74,20 @@ library(ggplot2)
      geom_label(data = finn_face,
              aes(x = chin_tip_x, y = chin_tip_y + 20, 
                  label = paste('Gender:', 
-                               scales::percent(face_gender_male_confidence),
+                               percent(face_gender_male_confidence),
                  'Male')), size = 6, color = '#377eb8') +
     geom_label(data = finn_face,
              aes(x = chin_tip_x, y = chin_tip_y + 60, 
-                 label = paste('Ethnicity:', scales::percent(face_black),
+                 label = paste('Ethnicity:', percent(face_black),
                  'Black')), size = 6, color = '#377eb8') +
    theme(legend.position="none")
 ```
 
-
+<img src="../man/figures/finn_facerec.png" width="400">
 
 Kairos has [some recommendations](https://www.kairos.com/docs/api/best-practices) to improve the quality of its recognition service, but in general, the API also works with multiple faces inside an image:
 
-```{r sw, fig.height=3, fig.width=4.8}
+```{r sw, fig.height=3, fig.width=4.8, eval = FALSE}
 sw_img <- "https://upload.wikimedia.org/wikipedia/en/8/82/Leiadeathstar.jpg"
 sw_faces <- detect(sw_img)
 
@@ -107,15 +104,16 @@ sw_img %>% image_read() %>% image_ggplot() +
    theme(legend.position="none")
 ```
 
-
+<img src="../man/figures/sw_facerec.png" width="400">
 
 Besides annotating faces in single images, it is possible to permanently store face recognition data with the Kairos API. This allows to assign multiple images to subject ids and estimates about whether faces from different images belong to the same subjects:
 
-```{r recognize}
+```{r recognize, eval = FALSE}
 finn_face <- enroll(image = finn_image, 
                     subject_id = 'finn', gallery = 'starwars')
 finn_new <- 'https://upload.wikimedia.org/wikipedia/commons/b/b6/John_Boyega_by_Gage_Skidmore.jpg'
 finn_rec <- recognize(image = finn_new, gallery = 'starwars',
                       show_candidate_images = FALSE)
-finn_rec
 ```
+
+The function `recognize()` returns a dataframe including the probability of a match in the column `confidence`.

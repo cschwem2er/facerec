@@ -1,5 +1,5 @@
 
-#' Title
+#' @title authorization
 #' @name facerec_init
 #' @description
 #' Initializes the authorization credentials for the Kairos Face Recognition API.

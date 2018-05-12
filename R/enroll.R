@@ -1,6 +1,6 @@
 
 
-#' Title
+#' @title enroll faces
 #' @name enroll
 #' @description
 #' Enroll face in an input image to a gallery and assign a subject id.

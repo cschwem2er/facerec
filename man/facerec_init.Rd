@@ -2,7 +2,7 @@
 % Please edit documentation in R/facerec_init.R
 \name{facerec_init}
 \alias{facerec_init}
-\title{Title}
+\title{authorization}
 \usage{
 facerec_init()
 }

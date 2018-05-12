@@ -2,7 +2,7 @@
 % Please edit documentation in R/detect.R
 \name{detect}
 \alias{detect}
-\title{Title}
+\title{detect faces}
 \usage{
 detect(image, min_head_scale = 0.015)
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_galleries.R
 \name{get_galleries}
 \alias{get_galleries}
-\title{Title}
+\title{list galleries}
 \usage{
 get_galleries()
 }

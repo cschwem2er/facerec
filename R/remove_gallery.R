@@ -1,5 +1,5 @@
 
-#' Title
+#' @title remove gallery
 #' @name remove_gallery
 #' @description
 #' Removes a gallery and all included subjects.

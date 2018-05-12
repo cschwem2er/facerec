@@ -1,4 +1,4 @@
-#' Title
+#' @title prepare local image
 #' @description
 #' Prepares a local image for an upload the Kairos API via \code{\link[facerec]{detect}},
 #' \code{\link[facerec]{enroll}}, \code{\link[facerec]{recognize}} and \code{\link[facerec]{verify}}.

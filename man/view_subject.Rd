@@ -2,7 +2,7 @@
 % Please edit documentation in R/view_subject.R
 \name{view_subject}
 \alias{view_subject}
-\title{Title}
+\title{view subject}
 \usage{
 view_subject(subject_id, gallery)
 }

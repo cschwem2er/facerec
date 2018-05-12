@@ -2,7 +2,7 @@
 % Please edit documentation in R/enroll.R
 \name{enroll}
 \alias{enroll}
-\title{Title}
+\title{enroll faces}
 \usage{
 enroll(image, subject_id, gallery, min_head_scale = 0.015)
 }

@@ -1,5 +1,5 @@
 
-#' Title
+#' @title get gallery subjects
 #' @name get_gallery_subjects
 #' @description
 #' Returns all subject id's associated with a gallery.

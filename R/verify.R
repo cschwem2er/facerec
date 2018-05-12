@@ -1,6 +1,6 @@
 
 
-#' Title
+#' @title verify face
 #' @name verify
 #' @description
 #' Verify whether face in an input image belongs to a subject in a gallery.

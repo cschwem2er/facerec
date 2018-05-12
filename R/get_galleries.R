@@ -1,5 +1,5 @@
 
-#' Title
+#' @title list galleries
 #' @name get_galleries
 #' @description
 #' Returns identifiers for all galleries associated with a Kairos application.

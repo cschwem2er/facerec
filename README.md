@@ -46,7 +46,6 @@ Sys.setenv(kairos_key = "Your Kairos API key")
 ``` r
 library(facerec)
 facerec_init()
-#> Succesfully initialized authentification credentials.
 ```
 
 You only need to call `facerec_init()` once after loading the package.
@@ -72,30 +71,9 @@ finn_face <- detect(image = finn_image)
 The function returns a dataframe with annotations for the recognized
 face in the input image. Variables include positional features of
 recognized faces, such as x and y coordinates for eyes. Moreover,
-demographic attributes like gender, ethnicity and age are available:
+demographic attributes like gender, ethnicity and age are available.
 
-``` r
-colnames(finn_face)
-#>  [1] "chin_tip_x"                    "chin_tip_y"                   
-#>  [3] "confidence"                    "eye_distance"                 
-#>  [5] "face_id"                       "height"                       
-#>  [7] "left_eye_center_x"             "left_eye_center_y"            
-#>  [9] "pitch"                         "quality"                      
-#> [11] "right_eye_center_x"            "right_eye_center_y"           
-#> [13] "roll"                          "top_left_x"                   
-#> [15] "top_left_y"                    "width"                        
-#> [17] "yaw"                           "face_age"                     
-#> [19] "face_asian"                    "face_black"                   
-#> [21] "face_glasses"                  "face_hispanic"                
-#> [23] "face_lips"                     "face_other"                   
-#> [25] "face_white"                    "face_gender_female_confidence"
-#> [27] "face_gender_male_confidence"   "face_gender_type"             
-#> [29] "img_source"                    "img_file"                     
-#> [31] "img_height"                    "img_status"                   
-#> [33] "img_width"
-```
-
-Features can be vizualied by using the packages
+Features can be visualized with the packages
 [magick](https://cran.r-project.org/web/packages/magick/index.html) and
 [ggplot2](https://cran.r-project.org/web/packages/ggplot2/index.html):
 
@@ -151,27 +129,25 @@ Besides annotating faces in single images, face recognition data can be
 stored permantly with the Kairos. This allows to assign multiple images
 to subject ids and to provide estimates about whether faces from
 different images belong to the same
-subjects:
+subjects.
 
 ``` r
 finn_face <- enroll(image = finn_image, subject_id = 'finn', gallery = 'starwars')
 finn_new <- 'https://upload.wikimedia.org/wikipedia/commons/b/b6/John_Boyega_by_Gage_Skidmore.jpg'
 finn_rec <- recognize(image = finn_new, gallery = 'starwars',
                       show_candidate_images = FALSE)
-finn_rec
-#> # A tibble: 1 x 5
-#>   confidence enrollment_timestamp face_id  subject_id comparison_source   
-#>        <dbl> <chr>                <chr>    <chr>      <chr>               
-#> 1      0.671 1526135443269        fa04f16… finn       https://upload.wiki…
 ```
+
+The function `recognize()` returns a dataframe including the probability
+of a match in the column `confidence`.
 
 ## Citation
 
-To cite facerec in publications please use:
+If you use facerec for your publications please consider citing
+it:
 
 ``` 
-  Carsten Schwemmer (2018). facerec: A Shiny Application for Inspecting
-  Structural Topic Models. R package version 0.1.0.
+  Carsten Schwemmer (2018). facerec: An interface for face recognition in R. R package version 0.1.0.
   https://github.com/methodds/facerec
 ```
 
@@ -179,7 +155,7 @@ A BibTeX entry for LaTeX users is:
 
 ``` 
   @Manual{,
-    title = {stminsights: A Shiny Application for Inspecting Structural Topic Models},
+    title = {facerec: An interface for face recognition in R},
     author = {Carsten Schwemmer},
     year = {2018},
     note = {R package version 0.1.0},

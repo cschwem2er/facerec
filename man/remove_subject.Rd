@@ -2,7 +2,7 @@
 % Please edit documentation in R/remove_subject.R
 \name{remove_subject}
 \alias{remove_subject}
-\title{Title}
+\title{remove subject}
 \usage{
 remove_subject(subject_id, gallery)
 }

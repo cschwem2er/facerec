@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_gallery_subjects.R
 \name{get_gallery_subjects}
 \alias{get_gallery_subjects}
-\title{Title}
+\title{get gallery subjects}
 \usage{
 get_gallery_subjects(gallery)
 }

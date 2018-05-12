@@ -1,5 +1,5 @@
 
-#' Title
+#' @title detect faces
 #' @name detect
 #' @description
 #' Detect faces in an input image and return annotations from the Kairs API.
