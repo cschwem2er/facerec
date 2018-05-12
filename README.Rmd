@@ -73,7 +73,7 @@ library(ggplot2)
              aes(xmin = top_left_x, xmax = top_left_x + width, 
                  ymin = top_left_y, ymax = top_left_y + height),
              fill = NA, linetype = 'dashed', size = 2, color = '#377eb8') +
-     geom_label(data = finn_face,
+   geom_label(data = finn_face,
              aes(x = chin_tip_x, y = chin_tip_y + 20, 
                  label = paste('Gender:', 
                                scales::percent(face_gender_male_confidence),
