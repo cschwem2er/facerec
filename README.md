@@ -4,9 +4,9 @@
 # facerec
 
 [![Travis-CI Build
-Status](https://travis-ci.org/methodds/stminsights.svg?branch=master)](https://travis-ci.org/methodds/stminsights)
+Status](https://travis-ci.org/methodds/facerec.svg?branch=master)](https://travis-ci.org/methodds/facerec)
 [![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/methodds/stminsights?branch=master&svg=true)](https://ci.appveyor.com/project/methodds/stminsights)
+Status](https://ci.appveyor.com/api/projects/status/github/methodds/facerec?branch=master&svg=true)](https://ci.appveyor.com/project/methodds/facerec)
 
 ## An interface for face recognition in R
 
@@ -162,7 +162,7 @@ finn_rec
 #> # A tibble: 1 x 5
 #>   confidence enrollment_timestamp face_id  subject_id comparison_source   
 #>        <dbl> <chr>                <chr>    <chr>      <chr>               
-#> 1      0.671 1526135114047        109535c… finn       https://upload.wiki…
+#> 1      0.671 1526135443269        fa04f16… finn       https://upload.wiki…
 ```
 
 ## Citation
