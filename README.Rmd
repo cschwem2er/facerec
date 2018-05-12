@@ -15,8 +15,8 @@ knitr::opts_chunk$set(
 # facerec
 
 
-[![Travis-CI Build Status](https://travis-ci.org/methodds/stminsights.svg?branch=master)](https://travis-ci.org/methodds/stminsights)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/methodds/stminsights?branch=master&svg=true)](https://ci.appveyor.com/project/methodds/stminsights)
+[![Travis-CI Build Status](https://travis-ci.org/methodds/facerec.svg?branch=master)](https://travis-ci.org/methodds/facerec)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/methodds/facerec?branch=master&svg=true)](https://ci.appveyor.com/project/methodds/facerec)
 
 ## An interface for face recognition in R
 
@@ -88,6 +88,7 @@ library(ggplot2)
                  'Black')), size = 6, color = '#377eb8') +
    theme(legend.position="none")
 ```
+
 <img src="man/figures/finn_facerec.png" width="250">
 
 Kairos has [some recommendations](https://www.kairos.com/docs/api/best-practices) to improve the quality of its recognition service, but in general, the API also works with multiple faces inside an image:
@@ -108,6 +109,7 @@ sw_img %>% image_read() %>% image_ggplot() +
                  color = factor(face_id)), size = 8) +
    theme(legend.position="none")
 ```
+
 <img src="man/figures/sw_facerec.png" width="400">
 
 Besides annotating faces in single images, face recognition data can be stored permantly with the Kairos. This allows to assign multiple images to subject ids and to provide estimates about whether faces from different images belong to the same subjects:
