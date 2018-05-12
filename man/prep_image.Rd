@@ -7,13 +7,13 @@
 prep_image(img_file)
 }
 \arguments{
-\item{img_file}{Path to an image of file type JPG, PNG, or BMP.}
+\item{img_file}{Path to an image of file type 'JPG', 'PNG', or 'BMP'.}
 }
 \value{
 The prepared image object.
 }
 \description{
-Prepares a local image for an upload the Kairos API via \code{\link[facerec]{detect}},
+Prepares a local image for an upload the 'Kairos' API via \code{\link[facerec]{detect}},
 \code{\link[facerec]{enroll}}, \code{\link[facerec]{recognize}} and \code{\link[facerec]{verify}}.
 }
 \examples{

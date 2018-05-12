@@ -10,7 +10,7 @@ get_galleries()
 A vector of gallery id's.
 }
 \description{
-Returns identifiers for all galleries associated with a Kairos application.
+Returns identifiers for all galleries associated with a 'Kairos' application.
 }
 \examples{
 \dontrun{

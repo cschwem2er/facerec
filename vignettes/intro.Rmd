@@ -2,7 +2,7 @@
 title: "Introduction to facerec"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{Introduction to facerec}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# facerec: An Interface for Face Recognition in R
+# An Interface for Face Recognition in R
 
 
 The facerec package provides an interface to the [Kairos Face Recognition API](https://www.kairos.com/docs/api/). The API detects faces in images and returns estimates for demographics like gender, ethnicity and age. It is also capable of recognizing and verifying humans across several images. 

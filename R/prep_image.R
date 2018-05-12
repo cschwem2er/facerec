@@ -1,8 +1,8 @@
 #' @title prepare local image
 #' @description
-#' Prepares a local image for an upload the Kairos API via \code{\link[facerec]{detect}},
+#' Prepares a local image for an upload the 'Kairos' API via \code{\link[facerec]{detect}},
 #' \code{\link[facerec]{enroll}}, \code{\link[facerec]{recognize}} and \code{\link[facerec]{verify}}.
-#' @param img_file  Path to an image of file type JPG, PNG, or BMP.
+#' @param img_file  Path to an image of file type 'JPG', 'PNG', or 'BMP'.
 #'
 #' @return The prepared image object.
 #' @importFrom knitr image_uri

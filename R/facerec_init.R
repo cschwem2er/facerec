@@ -2,7 +2,7 @@
 #' @title authorization
 #' @name facerec_init
 #' @description
-#' Initializes the authorization credentials for the Kairos Face Recognition API.
+#' Initializes the authorization credentials for the 'Kairos' Face Recognition API.
 #' Needs to be called before using any other functions of \code{facerec} and requires \code{kairos_id} and \code{kairos_key} as environment variables.
 #' @return nothing.
 #' @export

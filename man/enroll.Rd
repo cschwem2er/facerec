@@ -7,7 +7,7 @@
 enroll(image, subject_id, gallery, min_head_scale = 0.015)
 }
 \arguments{
-\item{image}{An image of file type JPG, PNG, or BMP.
+\item{image}{An image of file type 'JPG', 'PNG', or 'BMP'.
 Can either be an url string or a local image processed with \code{\link[facerec]{prep_image}}.}
 
 \item{subject_id}{A string containing the id to assign for the person in the enrolled image.}

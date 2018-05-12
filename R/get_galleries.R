@@ -2,7 +2,7 @@
 #' @title list galleries
 #' @name get_galleries
 #' @description
-#' Returns identifiers for all galleries associated with a Kairos application.
+#' Returns identifiers for all galleries associated with a 'Kairos' application.
 #'
 #' @return A vector of gallery id's.
 #' @export

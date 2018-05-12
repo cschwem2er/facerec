@@ -7,7 +7,7 @@
 verify(image, subject_id, gallery)
 }
 \arguments{
-\item{image}{An image of file type JPG, PNG, or BMP.
+\item{image}{An image of file type 'JPG', 'PNG', or 'BMP'.
 Can either be an url string or a local image processed with \code{\link[facerec]{prep_image}}.}
 
 \item{subject_id}{A string containing the id for the person in the gallery to be verified.}

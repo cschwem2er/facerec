@@ -5,7 +5,7 @@
 #' @description
 #' Enroll face in an input image to a gallery and assign a subject id.
 #' @param image
-#' An image of file type JPG, PNG, or BMP.
+#' An image of file type 'JPG', 'PNG', or 'BMP'.
 #' Can either be an url string or a local image processed with \code{\link[facerec]{prep_image}}.
 #' @param subject_id A string containing the id to assign for the person in the enrolled image.
 #' @param gallery A string containing the name of the gallery in which the image will be enrolled.

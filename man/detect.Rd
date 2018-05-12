@@ -7,7 +7,7 @@
 detect(image, min_head_scale = 0.015)
 }
 \arguments{
-\item{image}{An image of file type JPG, PNG, or BMP.
+\item{image}{An image of file type 'JPG', 'PNG', or 'BMP'.
 Can either be an url string or a local image processed with \code{\link[facerec]{prep_image}}.}
 
 \item{min_head_scale}{Set the ratio of the smallest face to look for in the input image. Accepts a value between .015 (1:64 scale) and .5 (1:2 scale).}
@@ -16,7 +16,7 @@ Can either be an url string or a local image processed with \code{\link[facerec]
 A data frame with annotations for each detected face.
 }
 \description{
-Detect faces in an input image and return annotations from the Kairos API.
+Detect faces in an input image and return annotations from the 'Kairos' API.
 }
 \examples{
 \dontrun{
