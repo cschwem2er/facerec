@@ -16,7 +16,7 @@ Can either be an url string or a local image processed with \code{\link[facerec]
 A data frame with annotations for each detected face.
 }
 \description{
-Detect faces in an input image and return annotations from the Kairs API.
+Detect faces in an input image and return annotations from the Kairos API.
 }
 \examples{
 \dontrun{

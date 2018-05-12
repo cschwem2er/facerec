@@ -2,7 +2,7 @@
 #' @title detect faces
 #' @name detect
 #' @description
-#' Detect faces in an input image and return annotations from the Kairs API.
+#' Detect faces in an input image and return annotations from the Kairos API.
 #' @param image
 #' An image of file type JPG, PNG, or BMP.
 #' Can either be an url string or a local image processed with \code{\link[facerec]{prep_image}}.

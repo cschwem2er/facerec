@@ -1,11 +1,11 @@
 Package: facerec
-Title: An interface for face recognition in R
+Title: An Interface for Face Recognition in R
 Version: 0.1.0
 Date: 2018-05-12
 Authors@R: person("Carsten", "Schwemmer", email = "c.schwem2er@gmail.com", role = c("aut", "cre"))
 URL: https://github.com/methodds/facerec
 BugReports: https://github.com/methodds/facerec/issues
-Description: This package provides an interface to the Kairos Face Recognition API. The API detects faces in images and returns estimates for demographics like gender, ethnicity and age.  
+Description: Provides an interface to the 'Kairos' Face Recognition API. The API detects faces in images and returns estimates for demographics like gender, ethnicity and age.  
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
