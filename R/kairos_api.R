@@ -6,6 +6,10 @@
 #' @importFrom snakecase to_snake_case
 #'
 #'
+
+## quiets concerns of R CMD check for non standard evaluation
+utils::globalVariables(c( ".facerec", "is",  "."))
+
 kairos_api <- function(path) {
   # change url according to api endpoint
   modify_url("https://api.kairos.com", path = path)
