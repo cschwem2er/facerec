@@ -8,7 +8,7 @@ Status](https://travis-ci.org/methodds/facerec.svg?branch=master)](https://travi
 [![AppVeyor Build
 Status](https://ci.appveyor.com/api/projects/status/github/methodds/facerec?branch=master&svg=true)](https://ci.appveyor.com/project/methodds/facerec)
 
-## An interface for face recognition in R
+## An Interface for Face Recognition in R
 
 This package provides an interface to the [Kairos Face Recognition
 API](https://www.kairos.com/docs/api/). The API detects faces in images
@@ -91,7 +91,7 @@ library(ggplot2)
                  label = paste('Gender:', 
                                scales::percent(face_gender_male_confidence),
                  'Male')), size = 6, color = '#377eb8') +
-    geom_label(data = finn_face,
+   geom_label(data = finn_face,
              aes(x = chin_tip_x, y = chin_tip_y + 60, 
                  label = paste('Ethnicity:', scales::percent(face_black),
                  'Black')), size = 6, color = '#377eb8') +

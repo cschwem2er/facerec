@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# facerec: An interface for face recognition in R
+# facerec: An Interface for Face Recognition in R
 
 
 The facerec package provides an interface to the [Kairos Face Recognition API](https://www.kairos.com/docs/api/). The API detects faces in images and returns estimates for demographics like gender, ethnicity and age. It is also capable of recognizing and verifying humans across several images. 
@@ -74,7 +74,7 @@ library(scales)
                  label = paste('Gender:', 
                                percent(face_gender_male_confidence),
                  'Male')), size = 6, color = '#377eb8') +
-    geom_label(data = finn_face,
+   geom_label(data = finn_face,
              aes(x = chin_tip_x, y = chin_tip_y + 60, 
                  label = paste('Ethnicity:', percent(face_black),
                  'Black')), size = 6, color = '#377eb8') +
