@@ -31,7 +31,7 @@ A CRAN version of facerec will be available soon.
 
 ### Authentification
 
-After loading facerec you first need to initiate your authentification credentials. Kairos offers a [free plan](https://www.kairos.com/pricing) for API access and after signin up, you will receive an application id and an application key. Both credentials need to be set as environment variables before using the initialization function `facerec_init()`:
+After loading facerec you first need to initiate your authentification credentials. Kairos offers a [free plan](https://www.kairos.com/pricing) for API access. After signing up, you will receive an application id and an application key. Both credentials need to be set as environment variables before using the initialization function `facerec_init()`:
 
 
 ```{r, eval = FALSE}

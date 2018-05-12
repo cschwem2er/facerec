@@ -34,8 +34,8 @@ A CRAN version of facerec will be available soon.
 
 After loading facerec you first need to initiate your authentification
 credentials. Kairos offers a [free plan](https://www.kairos.com/pricing)
-for API access and after signin up, you will receive an application id
-and an application key. Both credentials need to be set as environment
+for API access. After signing up, you will receive an application id and
+an application key. Both credentials need to be set as environment
 variables before using the initialization function `facerec_init()`:
 
 ``` r
@@ -86,7 +86,7 @@ library(ggplot2)
              aes(xmin = top_left_x, xmax = top_left_x + width, 
                  ymin = top_left_y, ymax = top_left_y + height),
              fill = NA, linetype = 'dashed', size = 2, color = '#377eb8') +
-     geom_label(data = finn_face,
+   geom_label(data = finn_face,
              aes(x = chin_tip_x, y = chin_tip_y + 20, 
                  label = paste('Gender:', 
                                scales::percent(face_gender_male_confidence),
