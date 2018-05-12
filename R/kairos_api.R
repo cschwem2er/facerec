@@ -4,6 +4,7 @@
 #' @importFrom stringr str_replace
 #' @importFrom rlang set_names
 #' @importFrom snakecase to_snake_case
+#' @importFrom scales percent
 #'
 #'
 kairos_api <- function(path) {

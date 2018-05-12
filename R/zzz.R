@@ -3,4 +3,4 @@
 }
 
 ## quiets concerns of R CMD check for non standard evaluation
-utils::globalVariables(c( ".facerec", "is",  "." ))
+utils::globalVariables(c( ".facerec", "is",  "."))

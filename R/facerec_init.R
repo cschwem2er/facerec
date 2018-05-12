@@ -25,7 +25,8 @@ facerec_init <- function() {
   kairos_id <- Sys.getenv('kairos_id')
   kairos_key <- Sys.getenv('kairos_key')
 
-  .facerec <<- new.env(parent = emptyenv())
+  #.facerec <- NULL
+  #.facerec <<- new.env(parent = emptyenv())
 
   if (kairos_id == '' | kairos_key == '') {
     stop('facerec: could not load authorization credentials from Sys env.')
