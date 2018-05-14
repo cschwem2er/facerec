@@ -7,9 +7,15 @@
 Status](https://travis-ci.org/methodds/facerec.svg?branch=master)](https://travis-ci.org/methodds/facerec)
 [![AppVeyor Build
 Status](https://ci.appveyor.com/api/projects/status/github/methodds/facerec?branch=master&svg=true)](https://ci.appveyor.com/project/methodds/facerec)
+<<<<<<< HEAD
 [![CRAN
 status](https://www.r-pkg.org/badges/version/facerec)](https://cran.r-project.org/package=facerec)
 [![CRAN
+=======
+#[![CRAN
+status](https://www.r-pkg.org/badges/version/facerec)](https://cran.r-project.org/package=facerec)
+#[![CRAN
+>>>>>>> 1f4ca07d359088f716e39927bc9aa6309debc5b1
 downloads](https://cranlogs.r-pkg.org/badges/grand-total/facerec)](https://cran.rstudio.com/web/packages/facerec/index.html)
 
 ## An Interface for Face Recognition in R
