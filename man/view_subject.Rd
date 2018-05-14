@@ -18,7 +18,7 @@ A dataframe with face id's and enrollment timestamps associated with the input s
 Returns all face id's for each image enrolled for a given subject in a gallery.
 }
 \examples{
-\dontrun{
+\donttest{
 # enroll
 finn_image <- 'https://upload.wikimedia.org/wikipedia/en/2/2a/Finn-Force_Awakens_\%282015\%29.png'
 finn_enroll <- enroll(image = finn_image, subject_id = 'finn', gallery = 'starwars')

@@ -28,7 +28,7 @@ A dataframe with the potential matches for the input image. The likelihood of ma
 Recognize faces in an image and return the most likely matches from a gallery.
 }
 \examples{
- \dontrun{
+ \donttest{
 
 # enroll
 finn_image <- 'https://upload.wikimedia.org/wikipedia/en/2/2a/Finn-Force_Awakens_\%282015\%29.png'

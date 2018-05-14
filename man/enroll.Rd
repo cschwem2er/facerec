@@ -23,7 +23,7 @@ A data frame with annotations for the enrolled image.
 Enroll face in an input image to a gallery and assign a subject id.
 }
 \examples{
-\dontrun{
+\donttest{
 
 finn_image <- 'https://upload.wikimedia.org/wikipedia/en/2/2a/Finn-Force_Awakens_\%282015\%29.png'
 finn_enroll <- enroll(image = finn_image, subject_id = 'finn', gallery = 'starwars')

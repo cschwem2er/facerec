@@ -13,7 +13,7 @@ A vector of gallery id's.
 Returns identifiers for all galleries associated with a 'Kairos' application.
 }
 \examples{
-\dontrun{
+\donttest{
 # enroll
 finn_image <- 'https://upload.wikimedia.org/wikipedia/en/2/2a/Finn-Force_Awakens_\%282015\%29.png'
 first_gallery <- enroll(image = finn_image, subject_id = 'finn', gallery = 'starwars')

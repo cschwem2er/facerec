@@ -17,7 +17,7 @@ Prepares a local image for an upload the 'Kairos' API via \code{\link[facerec]{d
 \code{\link[facerec]{enroll}}, \code{\link[facerec]{recognize}} and \code{\link[facerec]{verify}}.
 }
 \examples{
- \dontrun{
+ \donttest{
  # download example image
  finn_image <- 'https://upload.wikimedia.org/wikipedia/en/2/2a/Finn-Force_Awakens_\%282015\%29.png'
  temp_img_path <- tempfile(fileext = '.png')

@@ -7,3 +7,9 @@
 ## R CMD check results
 
 There were no ERRORs, WARNINGS or NOTES.
+
+## Comments from the CRAN submission team:
+
+- "Please omit the redundant 'in R' in your title." -> title is now adjusted
+- "Please add an URL for 'Kairos' Face Recognition API in your description text" -> URL is added to the description
+- "Please replace \dontrun{} by \donttest{} in your Rd-files." -> all instances replaced

@@ -18,15 +18,15 @@ images.
 
 ## How to Install
 
-You can download and install the latest development version of the app
-by running `devtools::install_github('methodds/facerec')`.
+To install the CRAN version of facerec use
+`install.packages('facerec')`.
 
-For Windows users installing from github requires proper setup of
+You can also download and install the latest development version of the
+app by running `devtools::install_github('methodds/facerec')`. For
+Windows users installing from github requires proper setup of
 [Rtools](https://cran.r-project.org/bin/windows/Rtools/), for which a
 tutorial is available
 [here](https://github.com/stan-dev/rstan/wiki/Install-Rtools-for-Windows).
-
-A CRAN version of facerec will be available soon.
 
 ## How to Use
 
