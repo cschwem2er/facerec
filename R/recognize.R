@@ -19,6 +19,8 @@
 #' @examples
 #'  \donttest{
 #'
+#' facerec_init()
+#'
 #' # enroll
 #' finn_image <- 'https://upload.wikimedia.org/wikipedia/en/2/2a/Finn-Force_Awakens_%282015%29.png'
 #' padme_image <- 'https://upload.wikimedia.org/wikipedia/en/e/ee/Amidala.png'

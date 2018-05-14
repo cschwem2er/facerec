@@ -14,7 +14,7 @@ Initializes the authorization credentials for the 'Kairos' Face Recognition API.
 Needs to be called before using any other functions of \code{facerec} and requires \code{kairos_id} and \code{kairos_key} as environment variables.
 }
 \examples{
-\donttest{
+\dontrun{
 Sys.setenv(kairos_id = "Your Kairos API id")
 Sys.setenv(kairos_key = "Your Kairos API key")
 

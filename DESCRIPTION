@@ -6,7 +6,7 @@ Date: 2018-05-14
 Authors@R: person("Carsten", "Schwemmer", email = "c.schwem2er@gmail.com", comment = c(ORCID = "0000-0001-9084-946X"), role = c("aut", "cre"))
 URL: https://github.com/methodds/facerec
 BugReports: https://github.com/methodds/facerec/issues
-Description: Provides an interface to the 'Kairos' Face Recognition API <https:www.kairos.com/face-recognition-api>. The API detects faces in images and returns estimates for demographics like gender, ethnicity and age.  
+Description: Provides an interface to the 'Kairos' Face Recognition API <https://kairos.com/face-recognition-api>. The API detects faces in images and returns estimates for demographics like gender, ethnicity and age.  
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

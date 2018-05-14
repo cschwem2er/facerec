@@ -10,6 +10,9 @@
 #'
 #' @examples
 #'  \donttest{
+#'
+#'  facerec_init()
+#'
 #'  # download example image
 #'  finn_image <- 'https://upload.wikimedia.org/wikipedia/en/2/2a/Finn-Force_Awakens_%282015%29.png'
 #'  temp_img_path <- tempfile(fileext = '.png')

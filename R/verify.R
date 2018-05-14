@@ -16,6 +16,9 @@
 #' @examples
 #'
 #' \donttest{
+#'
+#' facerec_init()
+#'
 #' # enroll
 #' padme_image <- 'https://upload.wikimedia.org/wikipedia/en/e/ee/Amidala.png'
 #' padme_face <- enroll(image = padme_image, subject_id = 'padme', gallery = 'starwars')

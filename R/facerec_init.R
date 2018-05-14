@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' Sys.setenv(kairos_id = "Your Kairos API id")
 #' Sys.setenv(kairos_key = "Your Kairos API key")
 #'
