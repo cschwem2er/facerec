@@ -20,5 +20,5 @@ There were no ERRORs, WARNINGS or NOTES.
 
 - "Please replace \dontrun{} by \donttest{} in your Rd-files." 
 
--> all instances replaced expect for the function facerec_init(), because this would
+-> all instances replaced except for the function facerec_init(), because this would
 override the API credentials and therefore cause all other examples to fail
