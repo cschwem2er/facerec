@@ -48,7 +48,7 @@ You only need to call `facerec_init()` once after loading the package. In order 
 
 ### Face Recognition
 
-The Kairos API accepts image of file type JPG, PNG, or BMP. Images can be passed to several facerec functions, either as an url string or a local image prepared with `prep_image()`. In the following example,  `detect()` is used to recognize the face of the Star Wars character [Finn](https://en.wikipedia.org/wiki/Finn_(Star_Wars)):
+The Kairos API accepts images of file type JPG, PNG, or BMP. Images can be passed to several facerec functions, either as an url string or a local image prepared with `prep_image()`. In the following example,  `detect()` is used to recognize the face of the Star Wars character [Finn](https://en.wikipedia.org/wiki/Finn_(Star_Wars)):
 
 <img src="https://upload.wikimedia.org/wikipedia/en/2/2a/Finn-Force_Awakens_%282015%29.png" width="300">
 
@@ -57,7 +57,7 @@ finn_image <- 'https://upload.wikimedia.org/wikipedia/en/2/2a/Finn-Force_Awakens
 finn_face <- detect(image = finn_image)
 ```
 
-The function returns a dataframe with annotations for the recognized face in the input image. Variables include positional features of recognized faces, such as x and y coordinates for eyes. Moreover, demographic attributes like gender, ethnicity and age are available.
+The function returns a dataframe with annotations for the recognized faces in the input image. Variables include positional features of faces, such as x and y coordinates for eyes. Moreover, demographic attributes like gender, ethnicity and age are available.
 
 Features can be visualized with the packages magick and ggplot2:
 
@@ -85,7 +85,7 @@ library(scales)
 
 <img src="../man/figures/finn_facerec.png" width="400">
 
-Kairos has [some recommendations](https://www.kairos.com/docs/api/best-practices) to improve the quality of its recognition service, but in general, the API also works with multiple faces inside an image:
+Kairos has [some recommendations](https://www.kairos.com/docs/api/best-practices) for improving the quality of its recognition service, but in general, the API also works with multiple faces inside an image:
 
 ```{r sw, fig.height=3, fig.width=4.8, eval = FALSE}
 sw_img <- "https://upload.wikimedia.org/wikipedia/en/8/82/Leiadeathstar.jpg"

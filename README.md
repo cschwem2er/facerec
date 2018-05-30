@@ -12,7 +12,6 @@ status](https://www.r-pkg.org/badges/version/facerec)](https://cran.r-project.or
 [![CRAN
 downloads](https://cranlogs.r-pkg.org/badges/grand-total/facerec)](https://cran.rstudio.com/web/packages/facerec/index.html)
 
-
 ## An Interface for Face Recognition in R
 
 This package provides an interface to the [Kairos Face Recognition
@@ -60,10 +59,10 @@ permanently store them in your `.Renviron`. I recommend
 
 ### Face Recognition
 
-Kairos accepts image of file type JPG, PNG, or BMP. Images can be passed
-to several facerec functions, either as an url string or a local image
-prepared with `prep_image()`. In the following example, `detect()` is
-used to recognize the face of the Star Wars character
+Kairos accepts images of file type JPG, PNG, or BMP. Images can be
+passed to several facerec functions, either as an url string or a local
+image prepared with `prep_image()`. In the following example `detect()`
+is used to recognize the face of the Star Wars character
 [Finn](https://en.wikipedia.org/wiki/Finn_\(Star_Wars\)):
 
 <img src="https://upload.wikimedia.org/wikipedia/en/2/2a/Finn-Force_Awakens_%282015%29.png" width="250">
@@ -106,9 +105,9 @@ library(ggplot2)
 <img src="man/figures/finn_facerec.png" width="250">
 
 Kairos has [some
-recommendations](https://www.kairos.com/docs/api/best-practices) to
-improve the quality of its recognition service, but in general, the API
-also works with multiple faces inside an
+recommendations](https://www.kairos.com/docs/api/best-practices) for
+improving the quality of its recognition service, but in general, the
+API also works with multiple faces inside an
 image:
 
 ``` r
@@ -131,8 +130,8 @@ sw_img %>% image_read() %>% image_ggplot() +
 <img src="man/figures/sw_facerec.png" width="400">
 
 Besides annotating faces in single images, face recognition data can be
-stored permantly with the Kairos. This allows to assign multiple images
-to subject ids and to provide estimates about whether faces from
+stored permanently with the Kairos API. This allows to assign multiple
+images to subject ids and to provide estimates about whether faces from
 different images belong to the same
 subjects.
 
