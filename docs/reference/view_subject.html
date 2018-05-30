@@ -142,14 +142,14 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='facerec_init.html'>facerec_init</a></span>()</div><div class='output co'>#&gt; <span class='message'>Succesfully initialized authentification credentials.</span></div><div class='input'>
+<span class='fu'><a href='facerec_init.html'>facerec_init</a></span>()</div><div class='output co'>#&gt; <span class='error'>Error in facerec_init(): facerec: could not load authorization credentials from Sys env.</span></div><div class='input'>
 <span class='co'># enroll</span>
 <span class='no'>finn_image</span> <span class='kw'>&lt;-</span> <span class='st'>'https://upload.wikimedia.org/wikipedia/en/2/2a/Finn-Force_Awakens_%282015%29.png'</span>
-<span class='no'>finn_enroll</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='enroll.html'>enroll</a></span>(<span class='kw'>image</span> <span class='kw'>=</span> <span class='no'>finn_image</span>, <span class='kw'>subject_id</span> <span class='kw'>=</span> <span class='st'>'finn'</span>, <span class='kw'>gallery</span> <span class='kw'>=</span> <span class='st'>'starwars'</span>)
-
+<span class='no'>finn_enroll</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='enroll.html'>enroll</a></span>(<span class='kw'>image</span> <span class='kw'>=</span> <span class='no'>finn_image</span>, <span class='kw'>subject_id</span> <span class='kw'>=</span> <span class='st'>'finn'</span>, <span class='kw'>gallery</span> <span class='kw'>=</span> <span class='st'>'starwars'</span>)</div><div class='output co'>#&gt; <span class='error'>Error: API did not return json</span></div><div class='input'>
 <span class='co'># view subject</span>
-<span class='fu'>view_subject</span>(<span class='kw'>subject_id</span> <span class='kw'>=</span> <span class='st'>'finn'</span>, <span class='kw'>gallery</span> <span class='kw'>=</span> <span class='st'>'starwars'</span>)</div><div class='output co'>#&gt;   enrollment_timestamp             face_id
-#&gt; 1        1526322349036 505bd11bd6da4e5ab49</div><div class='input'>
+<span class='fu'>view_subject</span>(<span class='kw'>subject_id</span> <span class='kw'>=</span> <span class='st'>'finn'</span>, <span class='kw'>gallery</span> <span class='kw'>=</span> <span class='st'>'starwars'</span>)</div><div class='output co'>#&gt; <span class='error'>Error: lexical error: invalid char in json text.</span>
+#&gt; <span class='error'>                                       Authentication parameters missi</span>
+#&gt; <span class='error'>                     (right here) ------^</span></div><div class='input'>
 
 </div></pre>
   </div>

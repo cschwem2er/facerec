@@ -140,7 +140,7 @@ enroll, recognize and verify." />
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'> </div><div class='input'>
- <span class='fu'><a href='facerec_init.html'>facerec_init</a></span>()</div><div class='output co'>#&gt; <span class='message'>Succesfully initialized authentification credentials.</span></div><div class='input'>
+ <span class='fu'><a href='facerec_init.html'>facerec_init</a></span>()</div><div class='output co'>#&gt; <span class='error'>Error in facerec_init(): facerec: could not load authorization credentials from Sys env.</span></div><div class='input'>
  <span class='co'># download example image</span>
  <span class='no'>finn_image</span> <span class='kw'>&lt;-</span> <span class='st'>'https://upload.wikimedia.org/wikipedia/en/2/2a/Finn-Force_Awakens_%282015%29.png'</span>
  <span class='no'>temp_img_path</span> <span class='kw'>&lt;-</span> <span class='fu'>tempfile</span>(<span class='kw'>fileext</span> <span class='kw'>=</span> <span class='st'>'.png'</span>)
@@ -150,7 +150,7 @@ enroll, recognize and verify." />
  <span class='no'>finn_local</span> <span class='kw'>&lt;-</span> <span class='fu'>prep_image</span>(<span class='no'>temp_img_path</span>)
 
  <span class='co'># use prepared image</span>
- <span class='no'>faces</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='detect.html'>detect</a></span>(<span class='kw'>image</span> <span class='kw'>=</span> <span class='no'>finn_local</span>)</div><div class='input'>
+ <span class='no'>faces</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='detect.html'>detect</a></span>(<span class='kw'>image</span> <span class='kw'>=</span> <span class='no'>finn_local</span>)</div><div class='output co'>#&gt; <span class='error'>Error: API did not return json</span></div><div class='input'> </div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
