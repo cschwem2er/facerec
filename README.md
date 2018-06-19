@@ -7,10 +7,6 @@
 Status](https://travis-ci.org/methodds/facerec.svg?branch=master)](https://travis-ci.org/methodds/facerec)
 [![AppVeyor Build
 Status](https://ci.appveyor.com/api/projects/status/github/methodds/facerec?branch=master&svg=true)](https://ci.appveyor.com/project/methodds/facerec)
-[![CRAN
-status](https://www.r-pkg.org/badges/version/facerec)](https://cran.r-project.org/package=facerec)
-[![CRAN
-downloads](https://cranlogs.r-pkg.org/badges/grand-total/facerec)](https://cran.rstudio.com/web/packages/facerec/index.html)
 
 ## An Interface for Face Recognition in R
 
@@ -19,6 +15,12 @@ API](https://www.kairos.com/docs/api/). The API detects faces in images
 and returns estimates for demographics like gender, ethnicity and age.
 It is also capable of recognizing and verifying humans across several
 images.
+
+**Important note: Kairos decided to shut down its diversity recognition
+features (see
+[here](http://www.kairos.com/blog/we-ve-retired-our-diversity-recognition-app-here-s-why)).
+As of June 2018, the API still returns ethnicity annotations, but it is
+unclear how long this will be the case.**
 
 ## How to Install
 
@@ -59,10 +61,10 @@ permanently store them in your `.Renviron`. I recommend
 
 ### Face Recognition
 
-Kairos accepts images of file type JPG, PNG, or BMP. Images can be
-passed to several facerec functions, either as an url string or a local
-image prepared with `prep_image()`. In the following example `detect()`
-is used to recognize the face of the Star Wars character
+Kairos accepts image of file type JPG, PNG, or BMP. Images can be passed
+to several facerec functions, either as an url string or a local image
+prepared with `prep_image()`. In the following example, `detect()` is
+used to recognize the face of the Star Wars character
 [Finn](https://en.wikipedia.org/wiki/Finn_\(Star_Wars\)):
 
 <img src="https://upload.wikimedia.org/wikipedia/en/2/2a/Finn-Force_Awakens_%282015%29.png" width="250">
@@ -105,9 +107,9 @@ library(ggplot2)
 <img src="man/figures/finn_facerec.png" width="250">
 
 Kairos has [some
-recommendations](https://www.kairos.com/docs/api/best-practices) for
-improving the quality of its recognition service, but in general, the
-API also works with multiple faces inside an
+recommendations](https://www.kairos.com/docs/api/best-practices) to
+improve the quality of its recognition service, but in general, the API
+also works with multiple faces inside an
 image:
 
 ``` r
@@ -130,8 +132,8 @@ sw_img %>% image_read() %>% image_ggplot() +
 <img src="man/figures/sw_facerec.png" width="400">
 
 Besides annotating faces in single images, face recognition data can be
-stored permanently with the Kairos API. This allows to assign multiple
-images to subject ids and to provide estimates about whether faces from
+stored permantly with the Kairos. This allows to assign multiple images
+to subject ids and to provide estimates about whether faces from
 different images belong to the same
 subjects.
 
