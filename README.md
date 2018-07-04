@@ -20,11 +20,12 @@ and returns estimates for demographics like gender, ethnicity and age.
 It is also capable of recognizing and verifying humans across several
 images.
 
-**Important note: Kairos decided to shut down its diversity recognition
+Important note: Kairos decided to shut down its diversity recognition
 features (see
 [here](http://www.kairos.com/blog/we-ve-retired-our-diversity-recognition-app-here-s-why)).
 As of June 2018, the API still returns ethnicity annotations, but it is
-unclear how long this will be the case.**
+unclear how long this will be the case. All other face recognition
+attributes will probably be unaffected.
 
 ## How to Install
 
