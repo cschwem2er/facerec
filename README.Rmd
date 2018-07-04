@@ -17,6 +17,8 @@ knitr::opts_chunk$set(
 
 [![Travis-CI Build Status](https://travis-ci.org/methodds/facerec.svg?branch=master)](https://travis-ci.org/methodds/facerec)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/methodds/facerec?branch=master&svg=true)](https://ci.appveyor.com/project/methodds/facerec)
+[![CRAN status](https://www.r-pkg.org/badges/version/facerec)](https://cran.r-project.org/package=facerec)
+[![CRAN downloads](https://cranlogs.r-pkg.org/badges/grand-total/facerec)](https://cran.rstudio.com/web/packages/facerec/index.html)
 
 ```{r, include = FALSE}
 #[![CRAN status](https://www.r-pkg.org/badges/version/facerec)](https://cran.r-project.org/package=facerec)
