@@ -16,16 +16,16 @@ downloads](https://cranlogs.r-pkg.org/badges/grand-total/facerec)](https://cran.
 
 This package provides an interface to the [Kairos Face Recognition
 API](https://www.kairos.com/docs/api/). The API detects faces in images
-and returns estimates for demographics like gender, ethnicity and age.
-It is also capable of recognizing and verifying humans across several
-images.
+and returns estimates for demographics. It is also capable of
+recognizing and verifying humans across several images.
 
-Important note: Kairos decided to shut down its diversity recognition
-features (see
+Important note: Kairos decided to shut down its online demo for
+diversity recognition features (see
 [here](http://www.kairos.com/blog/we-ve-retired-our-diversity-recognition-app-here-s-why)).
-As of June 2018, the API still returns ethnicity annotations, but it is
-unclear how long this will be the case. All other face recognition
-attributes will probably be unaffected.
+As of July 2018, the API still returns ethnicity annotations, but it
+also seems as if they will not provide free access anymore. Until the
+release of an official statement from Kairos, I will stop the
+development of this package.
 
 ## How to Install
 

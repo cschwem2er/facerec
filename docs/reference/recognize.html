@@ -163,16 +163,15 @@ Can either be an url string or a local image processed with <code><a href='prep_
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'> </div><div class='input'>
-<span class='fu'><a href='facerec_init.html'>facerec_init</a></span>()</div><div class='output co'>#&gt; <span class='message'>Succesfully initialized authentification credentials.</span></div><div class='input'>
+<span class='fu'><a href='facerec_init.html'>facerec_init</a></span>()</div><div class='output co'>#&gt; <span class='error'>Error in facerec_init(): facerec: could not load authorization credentials from Sys env.</span></div><div class='input'>
 <span class='co'># enroll</span>
 <span class='no'>finn_image</span> <span class='kw'>&lt;-</span> <span class='st'>'https://upload.wikimedia.org/wikipedia/en/2/2a/Finn-Force_Awakens_%282015%29.png'</span>
 <span class='no'>padme_image</span> <span class='kw'>&lt;-</span> <span class='st'>'https://upload.wikimedia.org/wikipedia/en/e/ee/Amidala.png'</span>
-<span class='no'>finn_face</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='enroll.html'>enroll</a></span>(<span class='kw'>image</span> <span class='kw'>=</span> <span class='no'>finn_image</span>, <span class='kw'>subject_id</span> <span class='kw'>=</span> <span class='st'>'finn'</span>, <span class='kw'>gallery</span> <span class='kw'>=</span> <span class='st'>'starwars'</span>)
-<span class='no'>padme_face</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='enroll.html'>enroll</a></span>(<span class='kw'>image</span> <span class='kw'>=</span> <span class='no'>padme_image</span>, <span class='kw'>subject_id</span> <span class='kw'>=</span> <span class='st'>'padme'</span>, <span class='kw'>gallery</span> <span class='kw'>=</span> <span class='st'>'starwars'</span>)
-
+<span class='no'>finn_face</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='enroll.html'>enroll</a></span>(<span class='kw'>image</span> <span class='kw'>=</span> <span class='no'>finn_image</span>, <span class='kw'>subject_id</span> <span class='kw'>=</span> <span class='st'>'finn'</span>, <span class='kw'>gallery</span> <span class='kw'>=</span> <span class='st'>'starwars'</span>)</div><div class='output co'>#&gt; <span class='error'>Error: API did not return json</span></div><div class='input'><span class='no'>padme_face</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='enroll.html'>enroll</a></span>(<span class='kw'>image</span> <span class='kw'>=</span> <span class='no'>padme_image</span>, <span class='kw'>subject_id</span> <span class='kw'>=</span> <span class='st'>'padme'</span>, <span class='kw'>gallery</span> <span class='kw'>=</span> <span class='st'>'starwars'</span>)</div><div class='output co'>#&gt; <span class='error'>Error: API did not return json</span></div><div class='input'>
 <span class='co'># recognize</span>
 <span class='no'>finn_2</span> <span class='kw'>&lt;-</span> <span class='st'>'https://upload.wikimedia.org/wikipedia/commons/b/b6/John_Boyega_by_Gage_Skidmore.jpg'</span>
-<span class='no'>finn_rec</span> <span class='kw'>&lt;-</span> <span class='fu'>recognize</span>(<span class='kw'>image</span> <span class='kw'>=</span> <span class='no'>finn_2</span>, <span class='kw'>gallery</span> <span class='kw'>=</span> <span class='st'>'starwars'</span>)</div></pre>
+<span class='no'>finn_rec</span> <span class='kw'>&lt;-</span> <span class='fu'>recognize</span>(<span class='kw'>image</span> <span class='kw'>=</span> <span class='no'>finn_2</span>, <span class='kw'>gallery</span> <span class='kw'>=</span> <span class='st'>'starwars'</span>)</div><div class='output co'>#&gt; <span class='error'>Error: API did not return json</span></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

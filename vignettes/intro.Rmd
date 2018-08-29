@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 # An Interface for Face Recognition in R
 
 
-The facerec package provides an interface to the [Kairos Face Recognition API](https://www.kairos.com/docs/api/). The API detects faces in images and returns estimates for demographics like gender, ethnicity and age. It is also capable of recognizing and verifying humans across several images. 
+The facerec package provides an interface to the [Kairos Face Recognition API](https://www.kairos.com/docs/api/). The API detects faces in images and returns estimates for demographics. It is also capable of recognizing and verifying humans across several images. 
 
 ## How to Install
 
@@ -31,7 +31,7 @@ You can also download and install the latest development version of the app by r
 
 ### Authentification
 
-After loading facerec you first need to initiate your authentification credentials. Kairos offers a [free plan](https://www.kairos.com/pricing) for API access. After signing up, you will receive an application id and an application key. Both credentials need to be set as environment variables before using the initialization function `facerec_init()`:
+After loading facerec you first need to initiate your authentification credentials. Kairos offers a [free trial](https://www.kairos.com/pricing) for API access. After signing up, you will receive an application id and an application key. Both credentials need to be set as environment variables before using the initialization function `facerec_init()`:
 
 
 ```{r, eval = FALSE}
