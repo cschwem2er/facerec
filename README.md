@@ -33,7 +33,7 @@ To install the CRAN version of facerec use
 `install.packages('facerec')`.
 
 You can also download and install the latest development version of the
-app by running `devtools::install_github('methodds/facerec')`. For
+app by running `devtools::install_github('cschwem2er/facerec')`. For
 Windows users installing from github requires proper setup of
 [Rtools](https://cran.r-project.org/bin/windows/Rtools/), for which a
 tutorial is available
@@ -159,7 +159,7 @@ it:
 
 ``` 
   Carsten Schwemmer (2018). facerec: An interface for face recognition in R. R package version 0.1.0.
-  https://github.com/methodds/facerec
+  https://github.com/cschwem2er/facerec
 ```
 
 A BibTeX entry for LaTeX users is:
@@ -170,6 +170,6 @@ A BibTeX entry for LaTeX users is:
     author = {Carsten Schwemmer},
     year = {2018},
     note = {R package version 0.1.0},
-    url = {https://github.com/methodds/facerec},
+    url = {https://github.com/cschwem2er/facerec},
   }
 ```

@@ -62,7 +62,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/methodds/facerec">
+  <a href="https://github.com/cschwem2er/facerec">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -97,7 +97,7 @@
 <h2 class="hasAnchor">
 <a href="#how-to-install" class="anchor"></a>How to Install</h2>
 <p>To install the CRAN version of facerec use <code>install.packages('facerec')</code>.</p>
-<p>You can also download and install the latest development version of the app by running <code><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">devtools::install_github('methodds/facerec')</a></code>. For Windows users installing from github requires proper setup of <a href="https://cran.r-project.org/bin/windows/Rtools/">Rtools</a>, for which a tutorial is available <a href="https://github.com/stan-dev/rstan/wiki/Install-Rtools-for-Windows">here</a>.</p>
+<p>You can also download and install the latest development version of the app by running <code><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">devtools::install_github('cschwem2er/facerec')</a></code>. For Windows users installing from github requires proper setup of <a href="https://cran.r-project.org/bin/windows/Rtools/">Rtools</a>, for which a tutorial is available <a href="https://github.com/stan-dev/rstan/wiki/Install-Rtools-for-Windows">here</a>.</p>
 </div>
 <div id="how-to-use" class="section level2">
 <h2 class="hasAnchor">
@@ -132,11 +132,11 @@
 <a class="sourceLine" id="cb4-9" data-line-number="9"><span class="st">   </span><span class="kw">geom_label</span>(<span class="dt">data =</span> finn_face,</a>
 <a class="sourceLine" id="cb4-10" data-line-number="10">             <span class="kw">aes</span>(<span class="dt">x =</span> chin_tip_x, <span class="dt">y =</span> chin_tip_y <span class="op">+</span><span class="st"> </span><span class="dv">20</span>, </a>
 <a class="sourceLine" id="cb4-11" data-line-number="11">                 <span class="dt">label =</span> <span class="kw">paste</span>(<span class="st">'Gender:'</span>, </a>
-<a class="sourceLine" id="cb4-12" data-line-number="12">                               scales<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/scales/topics/number_format">percent</a></span>(face_gender_male_confidence),</a>
+<a class="sourceLine" id="cb4-12" data-line-number="12">                               scales<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/scales/topics/percent_format">percent</a></span>(face_gender_male_confidence),</a>
 <a class="sourceLine" id="cb4-13" data-line-number="13">                 <span class="st">'Male'</span>)), <span class="dt">size =</span> <span class="dv">6</span>, <span class="dt">color =</span> <span class="st">'#377eb8'</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb4-14" data-line-number="14"><span class="st">   </span><span class="kw">geom_label</span>(<span class="dt">data =</span> finn_face,</a>
 <a class="sourceLine" id="cb4-15" data-line-number="15">             <span class="kw">aes</span>(<span class="dt">x =</span> chin_tip_x, <span class="dt">y =</span> chin_tip_y <span class="op">+</span><span class="st"> </span><span class="dv">60</span>, </a>
-<a class="sourceLine" id="cb4-16" data-line-number="16">                 <span class="dt">label =</span> <span class="kw">paste</span>(<span class="st">'Ethnicity:'</span>, scales<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/scales/topics/number_format">percent</a></span>(face_black),</a>
+<a class="sourceLine" id="cb4-16" data-line-number="16">                 <span class="dt">label =</span> <span class="kw">paste</span>(<span class="st">'Ethnicity:'</span>, scales<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/scales/topics/percent_format">percent</a></span>(face_black),</a>
 <a class="sourceLine" id="cb4-17" data-line-number="17">                 <span class="st">'Black'</span>)), <span class="dt">size =</span> <span class="dv">6</span>, <span class="dt">color =</span> <span class="st">'#377eb8'</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb4-18" data-line-number="18"><span class="st">   </span><span class="kw">theme</span>(<span class="dt">legend.position=</span><span class="st">"none"</span>)</a></code></pre></div>
 <p><img src="reference/figures/finn_facerec.png" width="250"></p>
@@ -169,14 +169,14 @@
 <a href="#citation" class="anchor"></a>Citation</h2>
 <p>If you use facerec for your publications please consider citing it:</p>
 <pre><code>  Carsten Schwemmer (2018). facerec: An interface for face recognition in R. R package version 0.1.0.
-  https://github.com/methodds/facerec</code></pre>
+  https://github.com/cschwem2er/facerec</code></pre>
 <p>A BibTeX entry for LaTeX users is:</p>
 <pre><code>  @Manual{,
     title = {facerec: An interface for face recognition in R},
     author = {Carsten Schwemmer},
     year = {2018},
     note = {R package version 0.1.0},
-    url = {https://github.com/methodds/facerec},
+    url = {https://github.com/cschwem2er/facerec},
   }</code></pre>
 </div>
 </div>
@@ -188,9 +188,9 @@
 <ul class="list-unstyled">
 <li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=facerec">https://​cloud.r-project.org/​package=facerec</a>
 </li>
-<li>Browse source code at <br><a href="https://github.com/methodds/facerec">https://​github.com/​methodds/​facerec</a>
+<li>Browse source code at <br><a href="https://github.com/cschwem2er/facerec">https://​github.com/​cschwem2er/​facerec</a>
 </li>
-<li>Report a bug at <br><a href="https://github.com/methodds/facerec/issues">https://​github.com/​methodds/​facerec/​issues</a>
+<li>Report a bug at <br><a href="https://github.com/cschwem2er/facerec/issues">https://​github.com/​cschwem2er/​facerec/​issues</a>
 </li>
 </ul>
 </div>

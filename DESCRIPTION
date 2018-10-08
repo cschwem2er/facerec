@@ -4,8 +4,8 @@ Title: An Interface for Face Recognition
 Version: 0.1.0
 Date: 2018-05-14
 Authors@R: person("Carsten", "Schwemmer", email = "c.schwem2er@gmail.com", comment = c(ORCID = "0000-0001-9084-946X"), role = c("aut", "cre"))
-URL: https://github.com/methodds/facerec
-BugReports: https://github.com/methodds/facerec/issues
+URL: https://github.com/cschwem2er/facerec
+BugReports: https://github.com/cschwem2er/facerec/issues
 Description: Provides an interface to the 'Kairos' Face Recognition API <https://kairos.com/face-recognition-api>. The API detects faces in images and returns estimates for demographics.  
 License: MIT + file LICENSE
 Encoding: UTF-8

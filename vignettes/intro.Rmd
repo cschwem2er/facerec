@@ -23,7 +23,7 @@ The facerec package provides an interface to the [Kairos Face Recognition API](h
 
 To install the CRAN version of facerec use ``install.packages('facerec')``.
 
-You can also download and install the latest development version of the app by running ``devtools::install_github('methodds/facerec')``. For Windows users installing from github requires proper setup of [Rtools](https://cran.r-project.org/bin/windows/Rtools/), for which a tutorial is available [here](https://github.com/stan-dev/rstan/wiki/Install-Rtools-for-Windows).
+You can also download and install the latest development version of the app by running ``devtools::install_github('cschwem2er/facerec')``. For Windows users installing from github requires proper setup of [Rtools](https://cran.r-project.org/bin/windows/Rtools/), for which a tutorial is available [here](https://github.com/stan-dev/rstan/wiki/Install-Rtools-for-Windows).
 
 
 
