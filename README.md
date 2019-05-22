@@ -4,9 +4,9 @@
 # facerec
 
 [![Travis-CI Build
-Status](https://travis-ci.org/methodds/facerec.svg?branch=master)](https://travis-ci.org/methodds/facerec)
+Status](https://travis-ci.org/cschwem2er/facerec.svg?branch=master)](https://travis-ci.org/cschwem2er/facerec)
 [![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/methodds/facerec?branch=master&svg=true)](https://ci.appveyor.com/project/methodds/facerec)
+Status](https://ci.appveyor.com/api/projects/status/github/cschwem2er/facerec?branch=master&svg=true)](https://ci.appveyor.com/project/cschwem2er/facerec)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/facerec)](https://cran.r-project.org/package=facerec)
 [![CRAN
