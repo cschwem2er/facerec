@@ -19,13 +19,11 @@ API](https://www.kairos.com/docs/api/). The API detects faces in images
 and returns estimates for demographics. It is also capable of
 recognizing and verifying humans across several images.
 
-Important note: Kairos decided to shut down its online demo for
+IMPORTANT NOTE: Kairos decided to shut down its online demo for
 diversity recognition features (see
 [here](http://www.kairos.com/blog/we-ve-retired-our-diversity-recognition-app-here-s-why)).
 As of July 2018, the API still returns ethnicity annotations, but it
-also seems as if they will not provide free access anymore. Until the
-release of an official statement from Kairos, I will stop the
-development of this package.
+also seems as if they will not provide free access anymore. For this reason this package is currently not being maintained and issues are not monitored.
 
 ## How to Install
 
